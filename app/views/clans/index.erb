@@ -1,0 +1,4 @@
+	<h2>Clans</h2>
+	<% @clans.each do |clan| %>
+	<li><%= link_to clan.title, "/clans/#{clan.id}" %> (<%= link_to "Delete", "/clans/#{clan.id}", method: :delete %>)</li>
+	<% end %>

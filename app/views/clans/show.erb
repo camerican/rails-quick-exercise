@@ -1,0 +1,10 @@
+	<h1><%= @clan.title %></h1>
+	<p>Welcome to our mighty clan.</p>
+	<blockquote><%= @clan.motto %></blockquote>
+
+	<h2>Members</h2>
+	<ul>
+	<% @clan.users.each do |user| %>
+	<li><%= user.fname + " " + user.lname %></li>
+	<% end %>
+	</ul>

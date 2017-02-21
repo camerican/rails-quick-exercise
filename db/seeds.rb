@@ -6,8 +6,12 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-User.create([{fname: 'Cam', lname:'Crews', username: 'camerican'},
-            {fname: 'James', lname:'Sullivan', username: 'jamessullivan77'}])
+Clan.create([{title: "NYCDA",motto:"Coding is Fun!"}])
+
+User.create([
+  {fname: 'Cam', lname:'Crews', username: 'camerican',clan_id: 1},
+  {fname: 'James', lname:'Sullivan', username: 'jamessullivan77',clan_id: 1}])
+
 
 
 
