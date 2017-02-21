@@ -1,0 +1,17 @@
+<ol>
+	<li>To get started, we'll run <code>rails new [project_name]</code></li>
+	<li>Then, we decided to build out a model for users: <code>rails generate model users fname:string lname:string username:string</code></li>
+	<li>now we can migrate our migration file (maybe check it to make sure it looks good): <code>rails db:migrate</code></li>
+	<li>next, we created a couple entries in the db/seeds.rb file: <code>User.create([{fname:'Cam',lname:'Crews',username:'camerican'}])</code></li>
+	<li>and then we ran <code>rails db:seed</code></li>
+	<li>We also added routes to handle our user model, inside of config/routes.rb, we added <code>resources :user</code></li>
+	<li>We could confirm this worked by running <code>rails routes</code>, and we should see all our new routes... we're interested in the <code>users/:id => 'users#show'</code></li>
+	<li>We then created a users controller by running <code>rails generate controller users</code></li>
+	<li>And then inside of app/controllers/users_controller.rb, we added a <code>def show</code> method</li>
+	<li>We added this line here: <code>@user = User.find(params[:id])</code></li>
+	<li>Now we need a view to look at our user we want to show, so we create a file: <code>touch /app/views/user/show.erb</code></li>
+	<li>We just output the data we want now, from that erb references the @user instance variable</li>
+
+
+
+</ol>
